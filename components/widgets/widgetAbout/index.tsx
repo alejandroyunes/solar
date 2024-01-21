@@ -1,8 +1,8 @@
 'use client'
 import * as stylex from "@stylexjs/stylex"
 import { colors, spacing, text } from "../../../app/globalTokens.stylex"
-import about from './assets/about7.webp'
-import abouttwo from './assets/about4.webp'
+import about from './assets/solarAbout2.webp'
+import abouttwo from './assets/solarAbout1.webp'
 import Image from "next/image"
 import ButtonTheme from "../../button/ButtonTheme"
 
@@ -39,7 +39,7 @@ export default function WidgetAbout({ inversedImage }: WidgetProps) {
 
       <div {...stylex.props(s.right, inversedImage && s.inverted)}>
         <p {...stylex.props(s.slogan)}>SAVING MONEY</p>
-        <p {...stylex.props(s.title)}>Cut your costs by up to 50%</p>
+        <p {...stylex.props(s.title)}>Our vission is to make solar energy accessible</p>
         <p {...stylex.props(s.description)}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam beatae asperiores quod perferendis architecto animi.</p>
         <p {...stylex.props(s.dateTop)}>MON-FRI: 9 AM – 22 PM</p>
         <p {...stylex.props(s.dateBottom)}>SATURDAY: 9 AM – 20 PM</p>

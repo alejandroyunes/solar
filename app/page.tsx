@@ -19,8 +19,8 @@ export default function Home() {
       <WidgetCards />
       {/* <WidgetService /> */}
 
-      {/* <WidgetAbout />
-      <WidgetCeo /> */}
+      <WidgetAbout />
+      {/* <WidgetCeo /> */}
       <WidgetPartner />
       <WidgetBlog />
       <WidgetGetInTouch />

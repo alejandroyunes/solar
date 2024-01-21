@@ -2,8 +2,8 @@ import "./globals.css"
 import { ThemeProvider } from "./providers"
 
 export const metadata = {
-  title: "Capital Invest",
-  description: "Capital invest company",
+  title: "Solar Company",
+  description: "Solar Energy",
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

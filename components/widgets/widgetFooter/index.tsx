@@ -23,12 +23,13 @@ export default function WidgetFooter() {
             width={120}
             height={30}
           /> */}
-          <p {...stylex.props(s.capital)}>Capita<span {...stylex.props(s.invest)}>||nvest</span></p>
+          <p {...stylex.props(s.capital)}>Solar <span {...stylex.props(s.invest)}>Energy</span></p>
+
 
 
         </div>
 
-        <div {...stylex.props(s.middleL)}>
+        {/* <div {...stylex.props(s.middleL)}>
           <Image
             {...stylex.props(s.imageL)}
             src={map}
@@ -36,7 +37,7 @@ export default function WidgetFooter() {
             width={0}
             height={0}
           />
-        </div>
+        </div> */}
         <div {...stylex.props(s.middleR)}>
           <p {...stylex.props(s.title)}>Office</p>
           <p {...stylex.props(s.text)}>Germany, 4595 Berliner Str.</p>
@@ -93,7 +94,7 @@ const s = stylex.create({
     display: 'grid',
     gap: spacing.md,
     gridTemplateColumns: {
-      default: '.4fr 1fr .3fr .7fr',
+      default: '1fr 1fr .7fr',
       '@media (max-width: 900px)': 'repeat(1, 1fr)',
     },
     margin: `${spacing.xxxl} auto`,

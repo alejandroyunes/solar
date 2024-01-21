@@ -2,7 +2,7 @@
 import * as stylex from "@stylexjs/stylex"
 import { colors, spacing, text } from "../../app/globalTokens.stylex"
 import Image from "next/image"
-import musicP from './assets/billboardSolar.webp'
+import musicP from './assets/billboardSolar3.webp'
 import ArrowDouble from "../Assets/Icons/ArrowDouble"
 
 export default function BillboardTwo() {
@@ -69,7 +69,7 @@ const s = stylex.create({
     animationName: slideIn,
     animationDuration: "1s",
     animationFillMode: "backwards",
-    color: colors.inverted
+    color: colors.white
   },
   slogan: {
     display: 'flex',
@@ -88,7 +88,7 @@ const s = stylex.create({
     animationFillMode: "backwards",
   },
   span: {
-    color: colors.inverted
+    color: colors.white
   },
   spamLight: {
     fontWeight: 'lighter'
@@ -105,6 +105,5 @@ const s = stylex.create({
     objectFit: 'cover',
     height: '100vh',
     zIndex: -1,
-    opacity: .3,
   },
 })

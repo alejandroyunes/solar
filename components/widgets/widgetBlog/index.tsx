@@ -1,7 +1,7 @@
 'use client'
 import * as stylex from "@stylexjs/stylex"
 import { colors, spacing, text } from "../../../app/globalTokens.stylex"
-import blog from './assets/blog.jpg'
+import blog from './assets/blog1.webp'
 
 
 import Image from "next/image"
@@ -30,12 +30,12 @@ export default function WidgetBlog() {
             height={0}
           />
           <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Business</p>
+            <p {...stylex.props(s.blogSlogan)}>Power</p>
             <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            <div {...stylex.props(s.bg)}>
+            {/* <div {...stylex.props(s.bg)}>
               <p {...stylex.props(s.day)}>13</p>
               <p>Apr</p>
-            </div>
+            </div> */}
           </div>
 
         </div>
@@ -50,12 +50,12 @@ export default function WidgetBlog() {
             height={0}
           />
           <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Business</p>
+            <p {...stylex.props(s.blogSlogan)}>Energy</p>
             <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            <div {...stylex.props(s.bg)}>
+            {/* <div {...stylex.props(s.bg)}>
               <p {...stylex.props(s.day)}>13</p>
               <p>Apr</p>
-            </div>
+            </div> */}
           </div>
 
         </div>
@@ -69,12 +69,12 @@ export default function WidgetBlog() {
             height={0}
           />
           <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Business</p>
+            <p {...stylex.props(s.blogSlogan)}>Solar</p>
             <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            <div {...stylex.props(s.bg)}>
+            {/* <div {...stylex.props(s.bg)}>
               <p {...stylex.props(s.day)}>13</p>
               <p>Apr</p>
-            </div>
+            </div> */}
           </div>
 
         </div>
@@ -129,8 +129,8 @@ const s = stylex.create({
   },
   bg: {
     position: 'absolute',
-    top: -106,
-    left: -16,
+    top: -284,
+    left: 16,
     height: 90,
     width: 90,
     backgroundColor: colors.black,
