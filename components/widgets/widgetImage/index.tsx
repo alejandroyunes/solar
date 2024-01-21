@@ -2,7 +2,7 @@
 import * as stylex from "@stylexjs/stylex"
 import { colors, spacing, text } from "../../../app/globalTokens.stylex"
 import Image from "next/image"
-import service from './assets/contactServices.webp'
+import service from './assets/contact.webp'
 
 
 interface WidgetImageProps {
