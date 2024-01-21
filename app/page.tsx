@@ -6,12 +6,14 @@ import WidgetPartner from '@/components/widgets/widgetPartners'
 import WidgetBlog from '@/components/widgets/widgetBlog'
 import WidgetGetInTouch from '@/components/widgets/widgetGetInTouch'
 import WidgetFooter from '@/components/widgets/widgetFooter'
+import BillboardTwo from "@/components/billboardTwo"
 
 export default function Home() {
 
   return (
     <>
-      <Billboard />
+      <BillboardTwo />
+      {/* <Billboard /> */}
       <WidgetAbout />
       <WidgetCeo />
       <WidgetService />

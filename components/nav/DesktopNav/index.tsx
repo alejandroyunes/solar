@@ -17,15 +17,15 @@ export function DesktopNav() {
 
       <div  {...stylex.props(s.left)}>
         <Link href="/" {...stylex.props(s.link)}>
-          <p {...stylex.props(s.capital)}>Capita<span {...stylex.props(s.invest)}>||nvest</span></p>
+          <p {...stylex.props(s.capital)}>Solar <span {...stylex.props(s.invest)}>Energy</span></p>
         </Link>
         <Menu />
       </div>
 
-      <div {...stylex.props(s.right)}>
+      {/* <div {...stylex.props(s.right)}>
         <ModePicker />
         <Social />
-      </div>
+      </div> */}
     </nav>
   )
 }
@@ -53,6 +53,7 @@ const s = stylex.create({
   left: {
     display: "flex",
     alignItems: "center",
+    marginTop: spacing.sm
   },
   right: {
     display: "flex",

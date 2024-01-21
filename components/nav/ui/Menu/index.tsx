@@ -65,6 +65,7 @@ const s = stylex.create({
     backgroundImage: colors.navUnderline,
     paddingBottom: spacing.xxxs,
     backgroundRepeat: 'no-repeat',
+    fontWeight: 'bold',
     backgroundPosition: {
       default: '0 100%',
       ':hover': '100% 100%',
