@@ -4,7 +4,7 @@ import WidgetContact from "@/components/widgets/widgetContact"
 export default function Contact() {
   return (
     <div>
-      <WidgetTitle title='Contact Us' />
+      <WidgetTitle title='Contact Us' subtitle='' />
       <WidgetContact />
     </div>
   )

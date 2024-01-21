@@ -4,7 +4,7 @@ import WidgetTitle from '@/components/widgets/widgetTitle'
 export default function Blog() {
   return (
     <div>
-      <WidgetTitle title='Blog Posts' />
+      <WidgetTitle title='Blog Posts' subtitle='' />
       <WidgetBlogs />
     </div>
   )

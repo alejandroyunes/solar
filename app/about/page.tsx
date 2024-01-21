@@ -5,7 +5,7 @@ import WidgetAbout from '@/components/widgets/widgetAbout'
 export default function About() {
   return (
     <div >
-      <WidgetTitle title='About Us' />
+      <WidgetTitle title='About Us' subtitle="" />
       <WidgetAbout inversedImage />
       <WidgetCeo />
     </div>

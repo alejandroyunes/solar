@@ -4,7 +4,7 @@ import WidgetService from "@/components/widgets/widgetService"
 export default function News() {
   return (
     <div>
-      <WidgetTitle title='News' />
+      <WidgetTitle title='News' subtitle='' />
       <WidgetService />
     </div>
   )
