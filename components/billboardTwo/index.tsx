@@ -52,7 +52,7 @@ const s = stylex.create({
     gridTemplateColumns: '1fr',
     margin: "0 auto",
     height: '100vh',
-    alignContent: 'center'
+    alignContent: 'center',
   },
   title: {
     display: 'flex',
@@ -69,6 +69,7 @@ const s = stylex.create({
     animationName: slideIn,
     animationDuration: "1s",
     animationFillMode: "backwards",
+    color: colors.inverted
   },
   slogan: {
     display: 'flex',
@@ -104,7 +105,6 @@ const s = stylex.create({
     objectFit: 'cover',
     height: '100vh',
     zIndex: -1,
-    backgroundColor: colors.black,
     opacity: .3,
   },
 })
