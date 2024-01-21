@@ -87,7 +87,7 @@ const s = stylex.create({
     animationFillMode: "backwards",
   },
   span: {
-    color: colors.white
+    color: colors.inverted
   },
   spamLight: {
     fontWeight: 'lighter'

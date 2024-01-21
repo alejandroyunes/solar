@@ -21,11 +21,10 @@ export function DesktopNav() {
         </Link>
         <Menu />
       </div>
-
-      {/* <div {...stylex.props(s.right)}>
+      <div {...stylex.props(s.right)}>
         <ModePicker />
-        <Social />
-      </div> */}
+        {/* <Social /> */}
+      </div>
     </nav>
   )
 }
@@ -53,7 +52,7 @@ const s = stylex.create({
   left: {
     display: "flex",
     alignItems: "center",
-    marginTop: spacing.sm
+    paddingTop: spacing.md
   },
   right: {
     display: "flex",

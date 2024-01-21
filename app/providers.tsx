@@ -99,7 +99,7 @@ const s = stylex.create({
   container: {
     maxWidth: $.maxWidth,
     padding: `0 ${spacing.md}`,
-    margin: `0 auto`
+    margin: `0 auto`,
   },
   desktopNav: {
     display: {
