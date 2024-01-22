@@ -99,6 +99,7 @@ const s = stylex.create({
     animationFillMode: 'both',
     animationTimingFunction: 'ease-in-out',
     animationIterationCount: 'infinite',
+    marginTop: spacing.xxl
   },
   image: {
     objectFit: 'cover',

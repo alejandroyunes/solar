@@ -41,7 +41,7 @@ const s = stylex.create({
     gap: spacing.md,
     justifyContent: 'center',
     justifyItems: 'center',
-    marginTop: spacing.xl
+    // marginTop: spacing.xl
   },
   top: {
     fontSize: text.h2
