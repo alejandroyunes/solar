@@ -52,7 +52,7 @@ const s = stylex.create({
     gridTemplateColumns: '1fr',
     margin: "0 auto",
     height: '100vh',
-    alignContent: 'center',
+    alignContent: 'space-evenly',
   },
   title: {
     display: 'flex',
@@ -99,7 +99,6 @@ const s = stylex.create({
     animationFillMode: 'both',
     animationTimingFunction: 'ease-in-out',
     animationIterationCount: 'infinite',
-    paddingTop: spacing.xl
   },
   image: {
     objectFit: 'cover',
