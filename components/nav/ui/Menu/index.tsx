@@ -61,7 +61,7 @@ const s = stylex.create({
     zIndex: 200,
     cursor: 'pointer',
     fontSize: text.p,
-    color: colors.white,
+    color: colors.inverted,
     backgroundImage: colors.navUnderline,
     paddingBottom: spacing.xxxs,
     backgroundRepeat: 'no-repeat',

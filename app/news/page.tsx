@@ -5,7 +5,7 @@ import WidgetCards from '@/components/widgets/widgetCards'
 export default function News() {
   return (
     <div>
-      <WidgetTitle title='Services' subtitle='' />
+      <WidgetTitle title='Services' subtitle='' spaceTop />
       <WidgetCards />
     </div>
   )

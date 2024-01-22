@@ -42,7 +42,7 @@ const s = stylex.create({
   },
   capital: {
     fontSize: text.h3,
-    color: colors.white
+    color: colors.inverted
   },
   invest: {
     marginRight: spacing.md,

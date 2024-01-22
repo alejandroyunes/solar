@@ -14,7 +14,7 @@ export default function WidgetTitle({ title, subtitle, spaceTop }: WidgetTitlePr
 
   return (
     <section>
-      <div {...stylex.props(s.container)}>
+      <div {...stylex.props(s.container, spaceTop && s.spacingTop)}>
         <div {...stylex.props(s.top)}>
           <p>{title}</p>
         </div>
@@ -41,7 +41,9 @@ const s = stylex.create({
     gap: spacing.md,
     justifyContent: 'center',
     justifyItems: 'center',
-    // marginTop: spacing.xl
+  },
+  spacingTop: {
+    marginTop: spacing.xl
   },
   top: {
     fontSize: text.h2
