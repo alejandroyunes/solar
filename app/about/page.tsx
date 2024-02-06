@@ -14,7 +14,7 @@ export default function About() {
       <div {...stylex.props(s.aboutUsTitle)}>
         <div>
           <h3 {...stylex.props(s.subTitle)}>Our History</h3>
-          <p>At Sienar Solar, our commitment lies in delivering sustainable and renewable energy solutions that empower individuals, businesses, and communities. Fueled by a passion for harnessing the sun's power, we aim to make a positive environmental impact, aiding clients in reducing their carbon footprint and energy costs.</p>
+          <p>{`At Sienar Solar, our commitment lies in delivering sustainable and renewable energy solutions that empower individuals, businesses, and communities. Fueled by a passion for harnessing the sun's power, we aim to make a positive environmental impact, aiding clients in reducing their carbon footprint and energy costs.`}</p>
         </div>
 
       </div>
