@@ -1,7 +1,7 @@
 "use client"
 import * as stylex from "@stylexjs/stylex"
 import Image from "next/image"
-import logo from '../../Assets/images/logo.webp'
+import logo from '../../Assets/images/solar-logo.png'
 
 
 import { colors, spacing, text } from "../../../app/globalTokens.stylex"
@@ -17,7 +17,13 @@ export function DesktopNav() {
 
       <div  {...stylex.props(s.left)}>
         <Link href="/" {...stylex.props(s.link)}>
-          <p {...stylex.props(s.capital)}>Solar <span {...stylex.props(s.invest)}>Energy</span></p>
+          <Image
+            {...stylex.props(s.logo)}
+            src={logo}
+            alt="alt"
+            width={130}
+            height={30}
+          />
         </Link>
         <Menu />
       </div>
@@ -53,10 +59,13 @@ const s = stylex.create({
   left: {
     display: "flex",
     alignItems: "center",
-    paddingTop: spacing.md
+    paddingTop: spacing.md,
   },
   right: {
     display: "flex",
     alignItems: "center",
+  },
+  logo: {
+    paddingRight: spacing.xs
   }
 })

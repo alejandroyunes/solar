@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <BillboardTwo />
-      <WidgetTitle title="Benefits to Save Energy" subtitle="Saving energy offers numerous benefits, both on an individual level and for the environment." />
+      <WidgetTitle title="Elevate your world with Sun-Powered Solutions" subtitle="Explore Energy Savings, Efficiency Devices, and Expert Consultations. " />
       <WidgetCards />
       {/* <WidgetService /> */}
 

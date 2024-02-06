@@ -15,109 +15,101 @@ export default function WidgetCards() {
 
         <div {...stylex.props(s.gridItem)}>
 
-          <Link href="#" {...stylex.props(s.link)}>
-            <div {...stylex.props(s.gridImage)}>
-              <Image
-                {...stylex.props(s.adImage)}
-                src={solar1}
-                alt="alt"
-                width={180}
-                height={180}
-              />
-            </div>
+          <div {...stylex.props(s.gridImage)}>
+            <Image
+              {...stylex.props(s.adImage)}
+              src={solar1}
+              alt="alt"
+              width={180}
+              height={180}
+            />
+          </div>
 
-            <div {...stylex.props(s.gridContainer)}>
-              <div {...stylex.props(s.gridDetails)}>
-                <h3 {...stylex.props(s.description)}>
-                  Wave Energy Solutions
-                </h3>
-              </div>
-              <div {...stylex.props(s.location)}>
-                <p>Saving energy offers numerous benefits, both on an individual level and for the environment.</p>
-              </div>
+          <div {...stylex.props(s.gridContainer)}>
+            <div {...stylex.props(s.gridDetails)}>
+              <h3 {...stylex.props(s.description)}>
+                System Design and Engineering
+              </h3>
             </div>
-          </Link>
+            <div {...stylex.props(s.location)}>
+              <p>We offer system design and engineering services, customizing solar solutions to meet the specific energy needs and requirements of our clients.</p>
+            </div>
+          </div>
 
         </div>
 
         <div {...stylex.props(s.gridItem)}>
 
-          <Link href="#" {...stylex.props(s.link)}>
-            <div {...stylex.props(s.gridImage)}>
-              <Image
-                {...stylex.props(s.adImage)}
-                src={solar2}
-                alt="alt"
-                width={180}
-                height={180}
-              />
-            </div>
+          <div {...stylex.props(s.gridImage)}>
+            <Image
+              {...stylex.props(s.adImage)}
+              src={solar2}
+              alt="alt"
+              width={180}
+              height={180}
+            />
+          </div>
 
-            <div {...stylex.props(s.gridContainer)}>
-              <div {...stylex.props(s.gridDetails)}>
-                <h3 {...stylex.props(s.description)}>
-                  Accessible Power Energy
-                </h3>
-              </div>
-              <div {...stylex.props(s.location)}>
-                <p>we are passionate about transforming the way we power our world.</p>
-              </div>
+          <div {...stylex.props(s.gridContainer)}>
+            <div {...stylex.props(s.gridDetails)}>
+              <h3 {...stylex.props(s.description)}>
+                Energy Efficiency Audits
+              </h3>
             </div>
-          </Link>
+            <div {...stylex.props(s.location)}>
+              <p>Our services encompass tailored solar system design, engineering, efficiency audits, and placement, meeting specific energy needs and requirements.</p>
+            </div>
+          </div>
 
         </div>
 
         <div {...stylex.props(s.gridItem)}>
 
-          <Link href="#" {...stylex.props(s.link)}>
-            <div {...stylex.props(s.gridImage)}>
-              <Image
-                {...stylex.props(s.adImage)}
-                src={solar3}
-                alt="alt"
-                width={180}
-                height={180}
-              />
-            </div>
+          <div {...stylex.props(s.gridImage)}>
+            <Image
+              {...stylex.props(s.adImage)}
+              src={solar3}
+              alt="alt"
+              width={180}
+              height={180}
+            />
+          </div>
 
-            <div {...stylex.props(s.gridContainer)}>
-              <div {...stylex.props(s.gridDetails)}>
-                <h3 {...stylex.props(s.description)}>
-                  Solar Suppliers
-                </h3>
-              </div>
-              <div {...stylex.props(s.location)}>
-                <p>Leading provider of renewable energy solutions.</p>
-              </div>
+          <div {...stylex.props(s.gridContainer)}>
+            <div {...stylex.props(s.gridDetails)}>
+              <h3 {...stylex.props(s.description)}>
+                Solar installation
+              </h3>
             </div>
-          </Link>
+            <div {...stylex.props(s.location)}>
+              <p>We provide professional installation services for solar panels on residential, commercial, or industrial properties.</p>
+            </div>
+          </div>
 
         </div>
 
         <div {...stylex.props(s.gridItem)}>
 
-          <Link href="#" {...stylex.props(s.link)}>
-            <div {...stylex.props(s.gridImage)}>
-              <Image
-                {...stylex.props(s.adImage)}
-                src={solar4}
-                alt="alt"
-                width={180}
-                height={180}
-              />
-            </div>
+          <div {...stylex.props(s.gridImage)}>
+            <Image
+              {...stylex.props(s.adImage)}
+              src={solar4}
+              alt="alt"
+              width={180}
+              height={180}
+            />
+          </div>
 
-            <div {...stylex.props(s.gridContainer)}>
-              <div {...stylex.props(s.gridDetails)}>
-                <h3 {...stylex.props(s.description)}>
-                  Hydropower Plants
-                </h3>
-              </div>
-              <div {...stylex.props(s.location)}>
-                <p>Transforming the way we power our world</p>
-              </div>
+          <div {...stylex.props(s.gridContainer)}>
+            <div {...stylex.props(s.gridDetails)}>
+              <h3 {...stylex.props(s.description)}>
+                Maintenance and Monitoring
+              </h3>
             </div>
-          </Link>
+            <div {...stylex.props(s.location)}>
+              <p>Offering maintenance and monitoring services to ensure the optimal performance and longevity of solar systems.</p>
+            </div>
+          </div>
 
         </div>
 

@@ -2,7 +2,7 @@
 import * as stylex from "@stylexjs/stylex"
 import { colors, spacing, text } from "../../../app/globalTokens.stylex"
 import Image from "next/image"
-import logo from '../../components/Assets/images/logo.webp'
+import logo from '../../Assets/images/solar-logo.png'
 import map from './assets/mapsGermanyjpb.jpg'
 import Link from "next/link"
 export default function WidgetFooter() {
@@ -17,16 +17,12 @@ export default function WidgetFooter() {
 
       <div {...stylex.props(s.container)}>
         <div {...stylex.props(s.left)}>
-          {/* <Image
+          <Image
             src={logo}
             alt="alt"
-            width={120}
-            height={30}
-          /> */}
-          <p {...stylex.props(s.capital)}>Solar <span {...stylex.props(s.invest)}>Energy</span></p>
-
-
-
+            width={150}
+            height={40}
+          />
         </div>
 
         {/* <div {...stylex.props(s.middleL)}>

@@ -15,7 +15,7 @@ export default function WidgetGetInTouch() {
       <div {...stylex.props(s.left)}>
         <p {...stylex.props(s.slogan)}>Contact Us</p>
         <p {...stylex.props(s.title)}>Get in touch</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate inventore sed facilis quis adipisci dolores error debitis laboriosam temporibus eveniet?</p>
+        <p>For inquiries or to explore sustainable energy options, get in touch with Sienar Solar today.</p>
       </div>
 
       <div {...stylex.props(s.right)}>

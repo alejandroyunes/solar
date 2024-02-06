@@ -11,10 +11,12 @@ export default function BillboardTwo() {
     <>
       <div  {...stylex.props(s.container)}>
         <div {...stylex.props(s.title)}>
-          <h1>Friendly energy 24/7</h1>
+          <h1>Solar Renewable Energy</h1>
         </div>
         <div {...stylex.props(s.slogan)}>
-          <h2>Leading solar <span {...stylex.props(s.spamLight)}>company</span> <span {...stylex.props(s.span)}> Revolutionizing Energy</span></h2>
+          <h2>Sun-powered
+            <span {...stylex.props(s.spamLight)}> solutions for a </span>
+            <span {...stylex.props(s.span)}>Sustainable world</span></h2>
           <div {...stylex.props(s.arrow)}>
             <ArrowDouble />
           </div>

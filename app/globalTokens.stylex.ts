@@ -188,7 +188,7 @@ export const globalTokens = stylex.defineVars({
 })
 
 export const colors = stylex.defineVars({
-  primary: '#12b407',
+  primary: '#FF3A23',
   black: '#1a1919',
   white: '#edebeb',
   gray: '#656565',

@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from "react"
 import ExitSvg from "../../../Assets/Icons/ExitSvg"
 import VerticalHamburger from "@/components/Assets/Icons/VerticalHamburger"
 import Image from "next/image"
-import logo from '../../../Assets/images/logo.webp'
+import logo from '../../../Assets/images/solar-logo.png'
 import Facebook from "@/components/Assets/Icons/Facebook"
 import Twitter from "@/components/Assets/Icons/Twitter"
 import Instagram from "@/components/Assets/Icons/Instagram"
@@ -34,7 +34,13 @@ export default function MenuHamburger() {
 
         <div   {...stylex.props(s.header)}>
           <Link href="/" {...stylex.props(s.link)} onClick={handleClose}>
-            <p {...stylex.props(s.capital)}>Solar <span {...stylex.props(s.invest)}>Energy</span></p>
+            <Image
+              {...stylex.props(s.menu)}
+              src={logo}
+              alt="alt"
+              width={120}
+              height={30}
+            />
 
           </Link>
           <div {...stylex.props(s.animationExit)} onClick={handleClose}>
@@ -172,7 +178,7 @@ const s = stylex.create({
       '@media (max-width: 500px)': spacing.md
     }
   },
-  logo: {
+  menu: {
     marginTop: spacing.lg
   },
   link: {
