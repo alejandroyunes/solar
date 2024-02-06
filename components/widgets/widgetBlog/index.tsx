@@ -2,10 +2,13 @@
 import * as stylex from "@stylexjs/stylex"
 import { colors, spacing, text } from "../../../app/globalTokens.stylex"
 import blog from './assets/blog1.webp'
-
+import service1 from '../../Assets/images/services/solar1.webp'
+import service3 from '../../Assets/images/services/solar3.webp'
+import service4 from '../../Assets/images/services/solar4.webp'
 
 import Image from "next/image"
 import ButtonTheme from "../../button/ButtonTheme"
+import WidgetTitle from "../widgetTitle"
 
 export default function WidgetBlog() {
   const handleClick = () => {
@@ -14,28 +17,25 @@ export default function WidgetBlog() {
 
   return (
     <section>
+      <WidgetTitle title="Elevate your world with Sun-Powered Solutions" />
 
-      <div {...stylex.props(s.titleContainer)}>
-        <p {...stylex.props(s.slogan)}>Tips for Clients</p>
-        <p {...stylex.props(s.title)}>Details about our work</p>
-      </div>
+      {/* <div {...stylex.props(s.titleContainer)}>
+        <p {...stylex.props(s.slogan)}>Elevate your world with Sun-Powered Solutions</p>
+        <p {...stylex.props(s.title)}>Services</p>
+      </div> */}
 
       <div {...stylex.props(s.container)}>
         <div {...stylex.props(s.left)}>
           <Image
             {...stylex.props(s.image)}
-            src={blog}
+            src={service1}
             alt="alt"
             width={0}
             height={0}
           />
           <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Power</p>
-            <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            {/* <div {...stylex.props(s.bg)}>
-              <p {...stylex.props(s.day)}>13</p>
-              <p>Apr</p>
-            </div> */}
+            <p {...stylex.props(s.blogSlogan)}>System Design and Engineering</p>
+            <p>We offer system design and engineering services, customizing solar solutions to meet the specific energy needs and requirements of our clients.</p>
           </div>
 
         </div>
@@ -44,18 +44,14 @@ export default function WidgetBlog() {
         <div {...stylex.props(s.center)}>
           <Image
             {...stylex.props(s.image)}
-            src={blog}
+            src={service3}
             alt="alt"
             width={0}
             height={0}
           />
           <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Energy</p>
-            <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            {/* <div {...stylex.props(s.bg)}>
-              <p {...stylex.props(s.day)}>13</p>
-              <p>Apr</p>
-            </div> */}
+            <p {...stylex.props(s.blogSlogan)}>Solar installation</p>
+            <p>We provide professional installation services for solar panels on residential, commercial, or industrial properties.</p>
           </div>
 
         </div>
@@ -63,26 +59,18 @@ export default function WidgetBlog() {
         <div {...stylex.props(s.right)}>
           <Image
             {...stylex.props(s.image)}
-            src={blog}
+            src={service4}
             alt="alt"
             width={0}
             height={0}
           />
           <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Solar</p>
-            <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            {/* <div {...stylex.props(s.bg)}>
-              <p {...stylex.props(s.day)}>13</p>
-              <p>Apr</p>
-            </div> */}
+            <p {...stylex.props(s.blogSlogan)}>Maintenance and Monitoring</p>
+            <p>Offering maintenance and monitoring services to ensure the optimal performance and longevity of solar systems.</p>
           </div>
 
         </div>
 
-      </div>
-
-      <div {...stylex.props(s.button)}>
-        <ButtonTheme variant="primary" onClick={handleClick}>View More Posts</ButtonTheme>
       </div>
     </section>
   )
@@ -93,7 +81,6 @@ const s = stylex.create({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    marginTop: spacing.xl,
   },
   slogan: {
     fontSize: text.h5,
@@ -121,28 +108,12 @@ const s = stylex.create({
   },
   description: {
     padding: {
-      default: `${spacing.sm} ${spacing.xl} ${spacing.xl}`,
+      default: `${spacing.sm} 0 ${spacing.xl}`,
       '@media (max-width: 900px)': `${spacing.sm} ${spacing.sm} ${spacing.xl}`
     },
-    fontSize: text.h4,
+    fontSize: text.p,
+    fontWeight: 'normal',
     position: 'relative'
-  },
-  bg: {
-    position: 'absolute',
-    top: -284,
-    left: 16,
-    height: 90,
-    width: 90,
-    backgroundColor: colors.black,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    lineHeight: 1,
-    color: colors.white
-  },
-  day: {
-    fontSize: text.h1
   },
   blogSlogan: {
     fontWeight: 'bold',

@@ -31,7 +31,12 @@ export default function About() {
       </div>
 
 
-      <WidgetAbout inversedImage />
+      <WidgetAbout
+        inversedImage
+        title="Empower with Solar"
+        subTitle='Accessing the Clean and Abundant Energy of the Sun for a Sustainable Tomorrow.'
+        description="Solar energy is a renewable form of energy that harnesses the power of the sun to generate electricity or heat. It is considered one of the cleanest and most abundant sources of energy available to us."
+      />
     </>
   )
 }

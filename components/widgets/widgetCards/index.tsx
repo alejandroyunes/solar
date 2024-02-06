@@ -2,19 +2,16 @@ import * as stylex from "@stylexjs/stylex"
 import { globalTokens as $, colors, spacing, text } from "../../../app/globalTokens.stylex"
 import Link from "next/link"
 import Image from "next/image"
-import solar1 from './assets/solar1.webp'
-import solar2 from './assets/solar2.webp'
-import solar3 from './assets/solar3.webp'
-import solar4 from './assets/solar4.webp'
+import solar1 from '../../Assets/images/services/solar1.webp'
+import solar2 from '../../Assets/images/services/solar2.webp'
+import solar3 from '../../Assets/images/services/solar3.webp'
+import solar4 from '../../Assets/images/services/solar4.webp'
 
 export default function WidgetCards() {
   return (
     <section {...stylex.props(s.container)}>
-
       <div {...stylex.props(s.grid)}>
-
         <div {...stylex.props(s.gridItem)}>
-
           <div {...stylex.props(s.gridImage)}>
             <Image
               {...stylex.props(s.adImage)}
@@ -28,11 +25,11 @@ export default function WidgetCards() {
           <div {...stylex.props(s.gridContainer)}>
             <div {...stylex.props(s.gridDetails)}>
               <h3 {...stylex.props(s.description)}>
-                System Design and Engineering
+                Initial Consultation
               </h3>
             </div>
             <div {...stylex.props(s.location)}>
-              <p>We offer system design and engineering services, customizing solar solutions to meet the specific energy needs and requirements of our clients.</p>
+              <p>The process begins with an initial consultation where we understand your energy needs, goals, and site-specific requirements.</p>
             </div>
           </div>
 
@@ -53,11 +50,11 @@ export default function WidgetCards() {
           <div {...stylex.props(s.gridContainer)}>
             <div {...stylex.props(s.gridDetails)}>
               <h3 {...stylex.props(s.description)}>
-                Energy Efficiency Audits
+                Site Assessment and Feasibility Study
               </h3>
             </div>
             <div {...stylex.props(s.location)}>
-              <p>Our services encompass tailored solar system design, engineering, efficiency audits, and placement, meeting specific energy needs and requirements.</p>
+              <p>Our team conducts a detailed site assessment to determine the feasibility of a solar energy system. and structural considerations.</p>
             </div>
           </div>
 
@@ -78,11 +75,11 @@ export default function WidgetCards() {
           <div {...stylex.props(s.gridContainer)}>
             <div {...stylex.props(s.gridDetails)}>
               <h3 {...stylex.props(s.description)}>
-                Solar installation
+                Customized System Design
               </h3>
             </div>
             <div {...stylex.props(s.location)}>
-              <p>We provide professional installation services for solar panels on residential, commercial, or industrial properties.</p>
+              <p>Based on the assessment and feasibility study, we design a customized solar system that meets your specific requirements.</p>
             </div>
           </div>
 
@@ -103,11 +100,11 @@ export default function WidgetCards() {
           <div {...stylex.props(s.gridContainer)}>
             <div {...stylex.props(s.gridDetails)}>
               <h3 {...stylex.props(s.description)}>
-                Maintenance and Monitoring
+                Proposal and Contracting
               </h3>
             </div>
             <div {...stylex.props(s.location)}>
-              <p>Offering maintenance and monitoring services to ensure the optimal performance and longevity of solar systems.</p>
+              <p>We provide a comprehensive proposal outlining the system design, projected energy savings, financial analysis, and cost estimates.</p>
             </div>
           </div>
 

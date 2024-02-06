@@ -6,7 +6,7 @@ import ArrowDownSvg from "@/components/Assets/Icons/ArrowDownSvg";
 
 interface WidgetTitleProps {
   title: string
-  subtitle: string,
+  subtitle?: string,
   spaceTop?: boolean
 }
 

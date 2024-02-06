@@ -5,12 +5,27 @@ import about from './assets/solarAbout2.webp'
 import abouttwo from './assets/solarAbout1.webp'
 import Image from "next/image"
 import ButtonTheme from "../../button/ButtonTheme"
+import Link from "next/link"
 
 interface WidgetProps {
   inversedImage?: boolean,
+  title: string,
+  subTitle: string,
+  description: string,
+  cta?: string
+  paragraphOne?: string,
+  paragraphTwo?: string
 }
 
-export default function WidgetAbout({ inversedImage }: WidgetProps) {
+export default function WidgetAbout({
+  inversedImage,
+  title,
+  subTitle,
+  description,
+  cta,
+  paragraphOne,
+  paragraphTwo
+}: WidgetProps) {
 
   const handleClick = () => {
     console.log("click")
@@ -19,7 +34,6 @@ export default function WidgetAbout({ inversedImage }: WidgetProps) {
   return (
     <section {...stylex.props(s.container)}>
       <div {...stylex.props(s.left)}>
-        {/* <a href="https://www.freepik.com/free-photo/happy-male-entrepreneur-reading-email-laptop-while-working-office_26390438.htm#page=2&query=business%20and%20computer&position=1&from_view=search&track=ais&uuid=79941738-8308-42f4-a131-2cadc372de65">Image by Drazen Zigic</a> on Freepik */}
         <Image
           {...stylex.props(s.imageL)}
           src={about}
@@ -27,7 +41,6 @@ export default function WidgetAbout({ inversedImage }: WidgetProps) {
           width={0}
           height={0}
         />
-        {/* Image by <a href="https://www.freepik.com/free-photo/smiling-businesspeople-working-with-laptop_962034.htm#page=2&query=business%20and%20computer&position=5&from_view=search&track=ais&uuid=79941738-8308-42f4-a131-2cadc372de65">Freepik</a> */}
         <Image
           {...stylex.props(s.imageR)}
           src={abouttwo}
@@ -38,14 +51,16 @@ export default function WidgetAbout({ inversedImage }: WidgetProps) {
       </div>
 
       <div {...stylex.props(s.right, inversedImage && s.inverted)}>
-        <p {...stylex.props(s.slogan)}>Our Working Hours</p>
-        <p {...stylex.props(s.title)}>Our vission is to make solar energy accessible</p>
-        <p {...stylex.props(s.description)}>The process begins with an initial consultation where the solar energy company engages with the client to understand their energy needs, goals, and site-specific requirements.</p>
-        <p {...stylex.props(s.dateTop)}>MON-FRI: 9 AM – 22 PM</p>
-        <p {...stylex.props(s.dateBottom)}>SATURDAY: 9 AM – 20 PM</p>
+        <p {...stylex.props(s.slogan)}>{title}</p>
+        <p {...stylex.props(s.title)}>{subTitle}</p>
+        <p {...stylex.props(s.description)}>{description}</p>
+        <p {...stylex.props(s.dateTop)}>{paragraphOne}</p>
+        <p {...stylex.props(s.dateBottom)}>{paragraphTwo}</p>
 
         <div>
-          <ButtonTheme variant="primary" onClick={handleClick}>Explore</ButtonTheme>
+          {cta && <Link href={cta}>
+            <ButtonTheme variant="primary" >Explore</ButtonTheme>
+          </Link>}
         </div>
       </div>
     </section>

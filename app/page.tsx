@@ -15,14 +15,23 @@ export default function Home() {
   return (
     <>
       <BillboardTwo />
-      <WidgetTitle title="Elevate your world with Sun-Powered Solutions" subtitle="Explore Energy Savings, Efficiency Devices, and Expert Consultations. " />
-      <WidgetCards />
       {/* <WidgetService /> */}
-
-      <WidgetAbout />
-      {/* <WidgetCeo /> */}
-      <WidgetPartner />
       <WidgetBlog />
+
+      <WidgetAbout
+        title="Our Working Hours"
+        subTitle='Our vission is to make solar energy accessible'
+        description="The process begins with an initial consultation where the solar energy company engages with the client to understand their energy needs, goals, and site-specific requirements."
+        cta="/about"
+        paragraphOne="MON-FRI: 9 AM – 22 PM"
+        paragraphTwo="SATURDAY: 9 AM – 20 PM"
+      />
+      {/* <WidgetCeo /> */}
+      {/* <WidgetPartner /> */}
+      <WidgetTitle title="Explore Energy Savings, Efficiency Devices, and Expert Consultations." subtitle="Our process" />
+
+      <WidgetCards />
+
       <WidgetGetInTouch />
     </>
   )
