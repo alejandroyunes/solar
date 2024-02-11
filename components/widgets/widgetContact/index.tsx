@@ -52,7 +52,7 @@ const s = stylex.create({
     },
     gap: spacing.md,
     margin: {
-      default: `${spacing.xxl} auto 0`,
+      default: `${spacing.sm} auto 0`,
       '@media (max-width: 900px)': `${spacing.xl} auto 0`
     },
     justifyItems: 'center',

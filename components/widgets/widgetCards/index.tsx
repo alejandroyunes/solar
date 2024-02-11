@@ -40,7 +40,7 @@ export default function WidgetCards() {
           <div {...stylex.props(s.gridImage)}>
             <Image
               {...stylex.props(s.adImage)}
-              src={solar2}
+              src={solar4}
               alt="alt"
               width={180}
               height={180}
@@ -90,7 +90,7 @@ export default function WidgetCards() {
           <div {...stylex.props(s.gridImage)}>
             <Image
               {...stylex.props(s.adImage)}
-              src={solar4}
+              src={solar2}
               alt="alt"
               width={180}
               height={180}

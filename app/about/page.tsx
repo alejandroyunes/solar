@@ -5,12 +5,10 @@ import WidgetAbout from '../../components/widgets/widgetAbout'
 import { colors, spacing, text } from "../globalTokens.stylex"
 import * as stylex from "@stylexjs/stylex"
 
-
 export default function About() {
   return (
     <>
       <WidgetTitle title='About Us' subtitle="" spaceTop />
-
       <div {...stylex.props(s.aboutUsTitle)}>
         <div>
           <h3 {...stylex.props(s.subTitle)}>Our History</h3>

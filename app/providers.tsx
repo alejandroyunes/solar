@@ -46,7 +46,7 @@ export const ThemeProvider = ({ children }: Props) => {
   return (
     <ThemeContext.Provider value={contextValue}>
       <html {...stylex.props(s.html, s.reset)} lang="es">
-        <body {...stylex.props(s.reset, s.body, theme === 'dark' ? darkTheme : lightTheme)}>
+        <body {...stylex.props(s.reset, s.body, theme === 'light' ? darkTheme : lightTheme)}>
 
           <div {...stylex.props(s.container)}>
             <div {...stylex.props(s.desktopNav)}>

@@ -2,132 +2,85 @@
 import * as stylex from "@stylexjs/stylex"
 import { colors, spacing, text } from "../../../app/globalTokens.stylex"
 import blog from './assets/blog.jpg'
+import blog1 from './assets/blog-article-1.webp'
 
 
 import Image from "next/image"
-import ButtonTheme from "../../button/ButtonTheme"
+import Link from "next/link"
 
 export default function WidgetBlogs() {
   const handleClick = () => {
     console.log("click")
   }
-
+  console.log('blog')
   return (
     <section>
       <div {...stylex.props(s.container)}>
-        <div {...stylex.props(s.left)}>
-          <Image
-            {...stylex.props(s.image)}
-            src={blog}
-            alt="alt"
-            width={0}
-            height={0}
-          />
-          <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Business</p>
-            <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            <div {...stylex.props(s.bg)}>
-              <p {...stylex.props(s.day)}>05</p>
-              <p>Apr</p>
+
+        <Link href="/blog/1">
+          <div {...stylex.props(s.left)}>
+            <Image
+              {...stylex.props(s.image)}
+              src={blog1}
+              alt="alt"
+              width={0}
+              height={0}
+            />
+            <div {...stylex.props(s.description)}>
+              <p {...stylex.props(s.blogSlogan)}>Business</p>
+              <h3>A Deep Dive into Solar Panels</h3>
+              <div {...stylex.props(s.bg)}>
+                <p {...stylex.props(s.day)}>10</p>
+                <p>Jan</p>
+              </div>
             </div>
+
           </div>
+        </Link>
 
-        </div>
-
-        <div {...stylex.props(s.center)}>
-          <Image
-            {...stylex.props(s.image)}
-            src={blog}
-            alt="alt"
-            width={0}
-            height={0}
-          />
-          <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Business</p>
-            <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            <div {...stylex.props(s.bg)}>
-              <p {...stylex.props(s.day)}>13</p>
-              <p>Apr</p>
+        <Link href="/blog/2">
+          <div {...stylex.props(s.center)}>
+            <Image
+              {...stylex.props(s.image)}
+              src={blog}
+              alt="alt"
+              width={0}
+              height={0}
+            />
+            <div {...stylex.props(s.description)}>
+              <p {...stylex.props(s.blogSlogan)}>Business</p>
+              <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
+              <div {...stylex.props(s.bg)}>
+                <p {...stylex.props(s.day)}>13</p>
+                <p>Apr</p>
+              </div>
             </div>
+
           </div>
+        </Link>
 
-        </div>
-
-        <div {...stylex.props(s.right)}>
-          <Image
-            {...stylex.props(s.image)}
-            src={blog}
-            alt="alt"
-            width={0}
-            height={0}
-          />
-          <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Business</p>
-            <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            <div {...stylex.props(s.bg)}>
-              <p {...stylex.props(s.day)}>28</p>
-              <p>Apr</p>
+        <Link href="/blog/3">
+          <div {...stylex.props(s.right)}>
+            <Image
+              {...stylex.props(s.image)}
+              src={blog}
+              alt="alt"
+              width={0}
+              height={0}
+            />
+            <div {...stylex.props(s.description)}>
+              <p {...stylex.props(s.blogSlogan)}>Business</p>
+              <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
+              <div {...stylex.props(s.bg)}>
+                <p {...stylex.props(s.day)}>28</p>
+                <p>Apr</p>
+              </div>
             </div>
+
           </div>
+        </Link>
 
-        </div>
 
-        <div {...stylex.props(s.left)}>
-          <Image
-            {...stylex.props(s.image)}
-            src={blog}
-            alt="alt"
-            width={0}
-            height={0}
-          />
-          <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Business</p>
-            <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            <div {...stylex.props(s.bg)}>
-              <p {...stylex.props(s.day)}>16</p>
-              <p>May</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div {...stylex.props(s.center)}>
-          <Image
-            {...stylex.props(s.image)}
-            src={blog}
-            alt="alt"
-            width={0}
-            height={0}
-          />
-          <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Business</p>
-            <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            <div {...stylex.props(s.bg)}>
-              <p {...stylex.props(s.day)}>18</p>
-              <p>May</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div {...stylex.props(s.right)}>
-          <Image
-            {...stylex.props(s.image)}
-            src={blog}
-            alt="alt"
-            width={0}
-            height={0}
-          />
-          <div {...stylex.props(s.description)}>
-            <p {...stylex.props(s.blogSlogan)}>Business</p>
-            <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
-            <div {...stylex.props(s.bg)}>
-              <p {...stylex.props(s.day)}>1</p>
-              <p>Jun</p>
-            </div>
-          </div>
-
-        </div>
 
       </div>
     </section>
@@ -150,11 +103,13 @@ const s = stylex.create({
   },
   description: {
     padding: {
-      default: `${spacing.sm} ${spacing.xl} ${spacing.xl}`,
+      default: `${spacing.sm} ${spacing.sm} ${spacing.xl}`,
       '@media (max-width: 900px)': `${spacing.sm} ${spacing.sm} ${spacing.xl}`
     },
     fontSize: text.h4,
-    position: 'relative'
+    position: 'relative',
+    color: colors.inverted
+
   },
   bg: {
     position: 'absolute',
@@ -177,7 +132,9 @@ const s = stylex.create({
     fontWeight: 'bold',
     paddingBottom: spacing.xxxs,
     fontSize: text.p,
-    color: colors.gray
+    color: colors.gray,
+    textDecoration: 'underline',
+
   },
   button: {
     margin: `0 auto ${spacing.xxl}`,
