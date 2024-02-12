@@ -3,6 +3,8 @@ import * as stylex from "@stylexjs/stylex"
 import { colors, spacing, text } from "../../../app/globalTokens.stylex"
 import blog from './assets/blog.jpg'
 import blog1 from './assets/blog-article-1.webp'
+import blog2 from './assets/blog-article-2.webp'
+import blog3 from './assets/blog-article-3.webp'
 
 
 import Image from "next/image"
@@ -42,17 +44,17 @@ export default function WidgetBlogs() {
           <div {...stylex.props(s.center)}>
             <Image
               {...stylex.props(s.image)}
-              src={blog}
+              src={blog2}
               alt="alt"
               width={0}
               height={0}
             />
             <div {...stylex.props(s.description)}>
-              <p {...stylex.props(s.blogSlogan)}>Business</p>
-              <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
+              <p {...stylex.props(s.blogSlogan)}>Heat Energy</p>
+              <h3>Exploring the Wonders of Solar Thermal Systems</h3>
               <div {...stylex.props(s.bg)}>
-                <p {...stylex.props(s.day)}>13</p>
-                <p>Apr</p>
+                <p {...stylex.props(s.day)}>28</p>
+                <p>Jan</p>
               </div>
             </div>
 
@@ -63,17 +65,17 @@ export default function WidgetBlogs() {
           <div {...stylex.props(s.right)}>
             <Image
               {...stylex.props(s.image)}
-              src={blog}
+              src={blog3}
               alt="alt"
               width={0}
               height={0}
             />
             <div {...stylex.props(s.description)}>
-              <p {...stylex.props(s.blogSlogan)}>Business</p>
-              <h3>Lorem ipsum dolor, sit amet consectetur.</h3>
+              <p {...stylex.props(s.blogSlogan)}>Power Grid</p>
+              <h3>Off-Grid and Grid-Connected Solar Systems</h3>
               <div {...stylex.props(s.bg)}>
-                <p {...stylex.props(s.day)}>28</p>
-                <p>Apr</p>
+                <p {...stylex.props(s.day)}>09</p>
+                <p>Feb</p>
               </div>
             </div>
 
@@ -93,7 +95,8 @@ const s = stylex.create({
     gap: spacing.lg,
     gridTemplateColumns: {
       default: 'repeat(3, minmax(0, 1fr))',
-      '@media (max-width: 900px)': 'repeat(1, 1fr)'
+      '@media (max-width: 900px) and (min-width: 756px)': 'repeat(2, 1fr)',
+      "@media (max-width: 756px)": "1fr"
     },
     marginTop: spacing.xxl,
   },
