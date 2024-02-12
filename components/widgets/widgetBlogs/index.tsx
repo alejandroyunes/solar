@@ -1,12 +1,7 @@
 'use client'
 import * as stylex from "@stylexjs/stylex"
 import { colors, spacing, text } from "../../../app/globalTokens.stylex"
-import blog from './assets/blog.jpg'
-import blog1 from './assets/blog-article-1.webp'
-import blog2 from './assets/blog-article-2.webp'
-import blog3 from './assets/blog-article-3.webp'
-
-
+import { blogsData } from "@/app/blog/blogs"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -14,74 +9,29 @@ export default function WidgetBlogs() {
   const handleClick = () => {
     console.log("click")
   }
-  console.log('blog')
   return (
     <section>
       <div {...stylex.props(s.container)}>
-
-        <Link href="/blog/1">
-          <div {...stylex.props(s.left)}>
-            <Image
-              {...stylex.props(s.image)}
-              src={blog1}
-              alt="alt"
-              width={0}
-              height={0}
-            />
-            <div {...stylex.props(s.description)}>
-              <p {...stylex.props(s.blogSlogan)}>Business</p>
-              <h3>A Deep Dive into Solar Panels</h3>
-              <div {...stylex.props(s.bg)}>
-                <p {...stylex.props(s.day)}>10</p>
-                <p>Jan</p>
+        {blogsData.map(blog =>
+          <Link href={`/blog/${blog.id}`} key={blog.id}>
+            <div {...stylex.props(s.left)}>
+              <img
+                {...stylex.props(s.image)}
+                src={blog.image}
+                alt="alt"
+              />
+              <div {...stylex.props(s.description)}>
+                <p {...stylex.props(s.blogSlogan)}>Business</p>
+                <h3>{blog.title}</h3>
+                <div {...stylex.props(s.bg)}>
+                  <p {...stylex.props(s.day)}>{blog.day}</p>
+                  <p>{blog.month}</p>
+                </div>
               </div>
+
             </div>
-
-          </div>
-        </Link>
-
-        <Link href="/blog/2">
-          <div {...stylex.props(s.center)}>
-            <Image
-              {...stylex.props(s.image)}
-              src={blog2}
-              alt="alt"
-              width={0}
-              height={0}
-            />
-            <div {...stylex.props(s.description)}>
-              <p {...stylex.props(s.blogSlogan)}>Heat Energy</p>
-              <h3>Exploring the Wonders of Solar Thermal Systems</h3>
-              <div {...stylex.props(s.bg)}>
-                <p {...stylex.props(s.day)}>28</p>
-                <p>Jan</p>
-              </div>
-            </div>
-
-          </div>
-        </Link>
-
-        <Link href="/blog/3">
-          <div {...stylex.props(s.right)}>
-            <Image
-              {...stylex.props(s.image)}
-              src={blog3}
-              alt="alt"
-              width={0}
-              height={0}
-            />
-            <div {...stylex.props(s.description)}>
-              <p {...stylex.props(s.blogSlogan)}>Power Grid</p>
-              <h3>Off-Grid and Grid-Connected Solar Systems</h3>
-              <div {...stylex.props(s.bg)}>
-                <p {...stylex.props(s.day)}>09</p>
-                <p>Feb</p>
-              </div>
-            </div>
-
-          </div>
-        </Link>
-
+          </Link>
+        )}
 
 
       </div>
