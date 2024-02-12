@@ -125,7 +125,7 @@ const s = stylex.create({
     margin: `0 auto ${spacing.xxl}`,
     textAlign: 'center',
   },
-  left: { cursor: 'pointer' },
-  center: { cursor: 'pointer' },
-  right: { cursor: 'pointer' },
+  left: {},
+  center: {},
+  right: {},
 })
