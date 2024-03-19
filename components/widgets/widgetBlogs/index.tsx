@@ -4,35 +4,77 @@ import { colors, spacing, text } from "../../../app/globalTokens.stylex";
 import { blogsData } from "@/app/blog/blogs";
 import Image from "next/image";
 import Link from "next/link";
+import blog1 from "../../../app/blog/assets/image1.webp";
+import blog2 from "../../../app/blog/assets/image2.webp";
+import blog3 from "../../../app/blog/assets/image3.webp";
 
 export default function WidgetBlogs() {
   const handleClick = () => {
     console.log("click");
   };
+
   return (
     <section>
       <div {...stylex.props(s.container)}>
-        {blogsData.map((blog) => (
-          <Link href={`/blogs/${blog.id}`} key={blog.id}>
-            <div {...stylex.props(s.left)}>
-              <Image
-                {...stylex.props(s.image)}
-                src={blog.image}
-                alt="alt"
-                width={300}
-                height={200}
-              />
-              <div {...stylex.props(s.description)}>
-                <p {...stylex.props(s.blogSlogan)}>Business</p>
-                <h3>{blog.title}</h3>
-                <div {...stylex.props(s.bg)}>
-                  <p {...stylex.props(s.day)}>{blog.day}</p>
-                  <p>{blog.month}</p>
-                </div>
+        <Link href="blogs/1" key={blogsData[0]?.id}>
+          <div {...stylex.props(s.left)}>
+            <Image
+              {...stylex.props(s.image)}
+              src={blog1}
+              alt="alt"
+              width={300}
+              height={200}
+            />
+            <div {...stylex.props(s.description)}>
+              <p {...stylex.props(s.blogSlogan)}>Business</p>
+              <h3>{blogsData[0]?.title}</h3>
+              <div {...stylex.props(s.bg)}>
+                <p {...stylex.props(s.day)}>{blogsData[0]?.day}</p>
+                <p>{blogsData[0]?.month}</p>
               </div>
             </div>
-          </Link>
-        ))}
+          </div>
+        </Link>
+
+        <Link href="blogs/2" key={blogsData[1]?.id}>
+          <div {...stylex.props(s.left)}>
+            <Image
+              {...stylex.props(s.image)}
+              src={blog2}
+              alt="alt"
+              width={300}
+              height={200}
+            />
+            <div {...stylex.props(s.description)}>
+              <p {...stylex.props(s.blogSlogan)}>Business</p>
+              <h3>{blogsData[1]?.title}</h3>
+              <div {...stylex.props(s.bg)}>
+                <p {...stylex.props(s.day)}>{blogsData[1]?.day}</p>
+                <p>{blogsData[1]?.month}</p>
+              </div>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="blogs/3" key={blogsData[2]?.id}>
+          <div {...stylex.props(s.left)}>
+            <Image
+              {...stylex.props(s.image)}
+              src={blog3}
+              alt="alt"
+              width={300}
+              height={200}
+            />
+            <div {...stylex.props(s.description)}>
+              <p {...stylex.props(s.blogSlogan)}>Business</p>
+              <h3>{blogsData[2]?.title}</h3>
+              <div {...stylex.props(s.bg)}>
+                <p {...stylex.props(s.day)}>{blogsData[2]?.day}</p>
+                <p>{blogsData[2]?.month}</p>
+              </div>
+            </div>
+          </div>
+        </Link>
       </div>
     </section>
   );

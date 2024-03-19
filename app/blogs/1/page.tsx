@@ -4,6 +4,7 @@ import { colors, spacing, text } from "../../../app/globalTokens.stylex";
 import { blogsData } from "../../blog/blogs";
 import React from "react";
 import Image from "next/image";
+import image1 from "../../blog/assets/image1.webp";
 
 interface ParamsProps {
   params: {
@@ -19,7 +20,7 @@ export default function Blogs() {
         <React.Fragment>
           <h1 {...stylex.props(s.title)}>{selectedBlog.title}</h1>
           <Image
-            src={selectedBlog.image}
+            src={image1}
             alt=""
             {...stylex.props(s.image)}
             width={600}
